@@ -1,0 +1,3 @@
+best_experiment_so_far 12/16/2018: python train_wavegan.py train ./piano_mydata_rnn2_200000iters --data_dir mypiano2 --wavegan_dim 64 --wavegan_genr_pp --wavegan_disc_phaseshuffle 0 --wavegan_disc_nupdate 5
+
+made dataset with: python data/make_tfrecord.py ./piano_soure_files ./mypiano2 --ext mp3 --fs 16000 --slice_len 1.024 --name train
